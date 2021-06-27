@@ -5,7 +5,9 @@ import requests
 import random
 
 
-BotToken = "ODU4NjUxNjk1NDQwMTk5Njky.YNhPtQ.cfvT_JkpL0CsoVkRId7Pr1l9CME"
+with open('token.txt') as f:
+    a = f.readline()
+    BotToken = a
 client = discord.Client()
 
 
